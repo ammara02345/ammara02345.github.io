@@ -11,52 +11,58 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container step5-layout">
+    <div class="sidebar">
+      <button onclick="showSection('about')" id="defaultTab">About Me</button>
+      <button onclick="showSection('projects')">Projects</button>
+      <button onclick="showSection('skills')">Skills</button>
+      <button onclick="showSection('contact')">Contact</button>
+    </div>
+    <div class="content-area">
+      <div id="about" class="tab-content active">
+        <h2>About Me</h2>
+        <p>I’m Ammara, a passionate freelancer skilled in data analytics, market research, and digital marketing. I enjoy transforming data into insights and helping businesses grow through smart strategies and clear communication.</p>
+      </div>
 
-  <div class="container" id="home">
-    <header>
-      <h1>Ammara Fatima</h1>
-      <p>Data Analyst | Market Researcher | Digital Marketer | Data Entry Expert</p>
-    </header>
+      <div id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Sales Dashboard:</strong> Power BI dashboard for a retail company</li>
+          <li><strong>Market Analysis Report:</strong> Competitive landscape for SMEs</li>
+          <li><strong>SEO Audit:</strong> Website optimization for a digital agency</li>
+          <li><strong>CRM Research:</strong> Tool comparison and selection report</li>
+        </ul>
+      </div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m Ammara, a passionate freelancer skilled in data analytics, market research, and digital marketing. I enjoy transforming data into insights and helping businesses grow.</p>
-    </section>
+      <div id="skills" class="tab-content">
+        <h2>Skills</h2>
+        <ul>
+          <li><i class="fas fa-database"></i> Data Entry & Cleaning</li>
+          <li><i class="fas fa-chart-line"></i> Market & Competitor Research</li>
+          <li><i class="fas fa-bullhorn"></i> Digital Marketing Campaigns</li>
+          <li><i class="fas fa-chart-pie"></i> Data Analysis & Dashboards</li>
+        </ul>
+      </div>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><i class="fas fa-database"></i> Data Entry & Cleaning</li>
-        <li><i class="fas fa-chart-line"></i> Market & Competitor Research</li>
-        <li><i class="fas fa-bullhorn"></i> Digital Marketing Campaigns</li>
-        <li><i class="fas fa-chart-pie"></i> Data Analysis & Dashboards</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Sales Dashboard:</strong> Power BI dashboard for a retail company</li>
-        <li><strong>Market Analysis Report:</strong> Competitive landscape for local SMEs</li>
-        <li><strong>SEO Audit:</strong> Website optimization for a digital agency</li>
-        <li><strong>CRM Research:</strong> Tool comparison and selection report</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><i class="fas fa-envelope"></i> your-email@example.com</p>
-      <p><i class="fab fa-github"></i> <a href="https://github.com/ammara02345" target="_blank">ammara02345</a></p>
-    </section>
+      <div id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p><i class="fas fa-envelope"></i> your-email@example.com</p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/ammara02345" target="_blank">ammara02345</a></p>
+      </div>
+    </div>
   </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.tab-content').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    window.onload = function () {
+      document.getElementById("defaultTab").click();
+    };
+  </script>
 </body>
 </html>
