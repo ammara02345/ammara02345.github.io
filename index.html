@@ -11,7 +11,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container step5-layout">
+  <header>
+    <img src="logo.png" alt="Ammara Fatima Logo" class="logo">
+    <h1>Ammara Fatima</h1>
+    <p>Data Analyst | Digital Marketer | Researcher</p>
+  </header>
+
+  <div class="container step6-layout">
     <div class="sidebar">
       <button onclick="showSection('about')" id="defaultTab">About Me</button>
       <button onclick="showSection('projects')">Projects</button>
@@ -52,6 +58,10 @@
     </div>
   </div>
 
+  <footer>
+    <p>© 2025 Ammara Fatima. All rights reserved.</p>
+  </footer>
+
   <script>
     function showSection(sectionId) {
       document.querySelectorAll('.tab-content').forEach(section => {
@@ -59,7 +69,6 @@
       });
       document.getElementById(sectionId).classList.add('active');
     }
-
     window.onload = function () {
       document.getElementById("defaultTab").click();
     };
