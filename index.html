@@ -11,56 +11,58 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Ammara Fatima Logo" class="logo">
-    <h1>Ammara Fatima</h1>
-    <p>Data Analyst | Digital Marketer | Researcher</p>
-  </header>
+  <div class="full-layout-box">
+    <header>
+      <img src="logo.png" alt="Ammara Fatima Logo" class="logo">
+      <h1>Ammara Fatima</h1>
+      <p>Data Analyst | Digital Marketer | Researcher</p>
+    </header>
 
-  <div class="container step6-layout">
-    <div class="sidebar">
-      <button onclick="showSection('about')" id="defaultTab">About Me</button>
-      <button onclick="showSection('projects')">Projects</button>
-      <button onclick="showSection('skills')">Skills</button>
-      <button onclick="showSection('contact')">Contact</button>
+    <div class="container step6-layout">
+      <div class="sidebar">
+        <button onclick="showSection('about')" id="defaultTab">About Me</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('skills')">Skills</button>
+        <button onclick="showSection('contact')">Contact</button>
+      </div>
+      <div class="content-area">
+        <div id="about" class="tab-content active">
+          <h2>About Me</h2>
+          <p>I’m Ammara, a passionate freelancer skilled in data analytics, market research, and digital marketing. I enjoy transforming data into insights and helping businesses grow through smart strategies and clear communication.</p>
+        </div>
+
+        <div id="projects" class="tab-content">
+          <h2>Projects</h2>
+          <ul>
+            <li><strong>Sales Dashboard:</strong> Power BI dashboard for a retail company</li>
+            <li><strong>Market Analysis Report:</strong> Competitive landscape for SMEs</li>
+            <li><strong>SEO Audit:</strong> Website optimization for a digital agency</li>
+            <li><strong>CRM Research:</strong> Tool comparison and selection report</li>
+          </ul>
+        </div>
+
+        <div id="skills" class="tab-content">
+          <h2>Skills</h2>
+          <ul>
+            <li><i class="fas fa-database"></i> Data Entry & Cleaning</li>
+            <li><i class="fas fa-chart-line"></i> Market & Competitor Research</li>
+            <li><i class="fas fa-bullhorn"></i> Digital Marketing Campaigns</li>
+            <li><i class="fas fa-chart-pie"></i> Data Analysis & Dashboards</li>
+          </ul>
+        </div>
+
+        <div id="contact" class="tab-content">
+          <h2>Contact</h2>
+          <p><i class="fas fa-envelope"></i> your-email@example.com</p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/ammara02345" target="_blank">ammara02345</a></p>
+        </div>
+      </div>
     </div>
-    <div class="content-area">
-      <div id="about" class="tab-content active">
-        <h2>About Me</h2>
-        <p>I’m Ammara, a passionate freelancer skilled in data analytics, market research, and digital marketing. I enjoy transforming data into insights and helping businesses grow through smart strategies and clear communication.</p>
-      </div>
 
-      <div id="projects" class="tab-content">
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Sales Dashboard:</strong> Power BI dashboard for a retail company</li>
-          <li><strong>Market Analysis Report:</strong> Competitive landscape for SMEs</li>
-          <li><strong>SEO Audit:</strong> Website optimization for a digital agency</li>
-          <li><strong>CRM Research:</strong> Tool comparison and selection report</li>
-        </ul>
-      </div>
-
-      <div id="skills" class="tab-content">
-        <h2>Skills</h2>
-        <ul>
-          <li><i class="fas fa-database"></i> Data Entry & Cleaning</li>
-          <li><i class="fas fa-chart-line"></i> Market & Competitor Research</li>
-          <li><i class="fas fa-bullhorn"></i> Digital Marketing Campaigns</li>
-          <li><i class="fas fa-chart-pie"></i> Data Analysis & Dashboards</li>
-        </ul>
-      </div>
-
-      <div id="contact" class="tab-content">
-        <h2>Contact</h2>
-        <p><i class="fas fa-envelope"></i> your-email@example.com</p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/ammara02345" target="_blank">ammara02345</a></p>
-      </div>
-    </div>
+    <footer>
+      <p>© 2025 Ammara Fatima. All rights reserved.</p>
+    </footer>
   </div>
-
-  <footer>
-    <p>© 2025 Ammara Fatima. All rights reserved.</p>
-  </footer>
 
   <script>
     function showSection(sectionId) {
