@@ -63,22 +63,3 @@ header img {
 h2 {
   color: #1b2a49;
 }
-
-/* Enhanced Skills Section */
-.skills-category {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-left: 4px solid #007bff;
-  border-radius: 8px;
-}
-
-.skills-category h3 {
-  margin-top: 0;
-  color: #1b2a49;
-}
-
-.skills-category ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
