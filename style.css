@@ -200,3 +200,50 @@ footer {
 .btn-view:hover {
   background-color: #007bff;
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.project-item h3 {
+  margin: 10px 0 6px;
+  color: #003f8a;
+}
+
+.project-item p {
+  font-size: 14px;
+  color: #444;
+}
+
+.btn-view {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 8px 12px;
+  background-color: #003f8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-view:hover {
+  background-color: #0056b3;
+}
+
